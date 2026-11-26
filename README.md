@@ -1,6 +1,6 @@
 # Odds in Your Favor: Statistics & Probability Practice
 
-A static practice-problem site for statistics and probability. It covers the common problems from a **stats minor** the core and elective courses of a full **undergraduate statistics degree**, and a **history** section on the people and problems that shaped the field.
+A static practice-problem site for statistics and probability. It covers the common problems from a **stats minor**, the core and elective courses of a full **undergraduate statistics degree**, and a **history** section on the people and problems that shaped the field.
 
 Every problem has:
 
