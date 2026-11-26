@@ -26,6 +26,7 @@ Every problem has:
 | Year 4 | STAT 430 Time Series | AR/MA/ARMA, stationarity, ACF/PACF, forecasting, smoothing |
 | Year 4 | STAT 440 Stochastic Processes | Markov chains, gambler's ruin, Poisson processes, queues, branching, Brownian motion |
 | Year 4 | STAT 450 Multivariate & Statistical Learning | Mahalanobis, PCA, k-means, bias–variance, ridge/lasso, LDA, classifier metrics |
+| History | History of Probability & Statistics | 38 trivia questions from Cardano and Pascal–Fermat to the bootstrap and MCMC, plus 7 classic historical problems (de Méré, problem of points, Newton–Pepys, Buffon's needle, horse kicks, Galton board, Benford) |
 
 ## Running it
 

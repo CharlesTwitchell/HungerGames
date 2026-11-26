@@ -76,10 +76,11 @@
   /* ---------- views ---------- */
   function home() {
     const minor = COURSES.filter(c => c.section === 'minor');
+    const history = COURSES.filter(c => c.section === 'history');
     const degree = COURSES.filter(c => c.section === 'degree');
     const all = COURSES.reduce((s, c) => { const k = courseStats(c); s.done += k.done; s.total += k.total; return s; }, { done: 0, total: 0 });
 
-    const minorHtml = minor.map(c => `
+    const featureHtml = (list) => list.map(c => `
       <div class="feature">
         <div class="card-code" style="color:var(--accent);font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase">${esc(c.code)}</div>
         <h3><a href="#/c/${c.id}" style="color:inherit;text-decoration:none">${esc(c.title)}</a></h3>
@@ -114,10 +115,12 @@
         </div>
       </section>
       <h2 id="minor">Stats Minor Essentials</h2>
-      ${minorHtml}
+      ${featureHtml(minor)}
       <h2 id="degree">Statistics Degree Courses</h2>
       <p style="color:var(--muted);margin:0">Roughly in the order a statistics major takes them.</p>
-      ${degreeHtml}`;
+      ${degreeHtml}
+      <h2 id="history">History of Stats &amp; Probability</h2>
+      ${featureHtml(history)}`;
     typeset(app);
   }
 
